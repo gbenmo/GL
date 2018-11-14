@@ -14,6 +14,10 @@ void main (void)		   // Déclaration des suites et variables
 	unsigned char n = 1  ;
 	
 	int i = 0 ;
+
+	int u = 1; 
+
+	int k = 1; 
 	 
 	int nb_rand;
 	
@@ -53,9 +57,21 @@ void main (void)		   // Déclaration des suites et variables
 		i++; 
 	
 	}
+
+	while ( u <= 20)
+
+	{
+		if ( k%3==0 || k%7==0 )
+		
+		{
+
+			S4 = S4 + k;
+			u++;
+		}
+
+		k++;
+
+		}
+	}
 	
 	
-}
-		
-		
-		
