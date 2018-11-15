@@ -37,11 +37,11 @@ void main (void)		   // Déclaration des suites et variables
 	
 	n = 0; 
 	
-	while ( S2 < 9876 )	   // Calcul des multiples de 3 inférieur a 9876.
+	while ( 3*n < 9876 )	   // Calcul des multiples de 3 inférieur a 9876.
 		  
 	{
 		
-	 S2 = S2 + 3*n ;
+	 S2 = S2 + n ;
 		 						
 	 n = n + 1 ;
 		 
