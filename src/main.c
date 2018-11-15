@@ -50,7 +50,7 @@ void main (void)		   // Déclaration des suites et variables
 	while ( i < 12 )   // on effectue la boucle pour 12 valeurs.
 		
 	{
-		nb_rand = rand()%11; // On utlise modulo pour obtenir un nombre entre 0 et 10 ,car 11 exlcue !  
+		nb_rand = (rand()%10)+1; // On utlise modulo pour obtenir un nombre entre 0 et 10 ,car 11 exlcue !  
 		
 		S3 = S3 + nb_rand ;
 		
