@@ -7,11 +7,12 @@
 int main(void)
 {
 	
-	 short joueur [6];
+	 short joueur [6] = { 25,45,10,6,3,8};
 	 short gagnant [6];
-	 unsigned char i , j ,x , y ,valide=0, tirage = 0, score=0 ;
+	 short score[100];
+	 short i , j ,x , w ,valide=0 ;
 
-	  while (tirage <100)
+	  for(w=0;w<100;w++)
 		  
 	  {
 		   
@@ -22,17 +23,6 @@ int main(void)
 		
 	{
 		gagnant[x]=tirerNumero();
-		
-	}
-	
-	 initialiserTirage();
-
-	for(y=0;y<6;y++)
-		
-		
-	{
-		
-		joueur[y]=tirerNumero();
 		
 	}
 	
@@ -54,16 +44,9 @@ int main(void)
 		 
      }
 	 
-	 score = valide; 
-	 
-	 tirage++; 
+	 score[w]=valide;
 	 
 	  }
-			 
-				 
-	 
-
-	
     return 0;
 }
 
