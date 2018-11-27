@@ -7,20 +7,58 @@
 int main(void)
 {
 	
-	 unsigned char joueur [6] = {1,21,36,12,23,8};
-	 unsigned char gagnant [6] = { 1,47,24,26,3,5 };
-	 unsigned char i;
-	 unsigned char j;
-	 unsigned char valide;
-	 
-	 for ( i=0 ;i<6; i++ )
-	 {
+	 short joueur [6];
+	 short gagnant [6];
+	 unsigned char i , j ,x , y ,valide=0, tirage = 0, score=0 ;
+
+	  while (tirage <100)
+		  
+	  {
+		   
+		  initialiserTirage(); 
+		  
+
+	for(x=0;x<6;x++)
+		
+	{
+		gagnant[x]=tirerNumero();
+		
+	}
+	
+	 initialiserTirage();
+
+	for(y=0;y<6;y++)
+		
+		
+	{
+		
+		joueur[y]=tirerNumero();
+		
+	}
+	
+	
+	for ( i=0 ;i<6; i++ )
 		 
+	 {
+         for (j=0; j<6; j++)
+			 
+		 {
+			 
 		 if ( joueur [i] == gagnant [j] )
 			 
 		 {
 			 valide++;
 		 }
+		 
+        }
+		 
+     }
+	 
+	 score = valide; 
+	 
+	 tirage++; 
+	 
+	  }
 			 
 				 
 	 
@@ -28,4 +66,4 @@ int main(void)
 	
     return 0;
 }
-}
+
