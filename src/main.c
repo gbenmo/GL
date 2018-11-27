@@ -3,12 +3,14 @@
 
 #include <stdlib.h>
 #include "my_header.h"
+#define SEUIL =150; 
+#define SEUILH =200; 
+#define SEUILB =100; 
+
 int main(void)
 {
 	  unsigned char bin [10] = {230, 120, 200, 50, 86, 127, 254, 21 , 89, 2};
-	  int SEUIL = 150;
 	  int i, i2 , i3 , i4, i5;
-	  int SEUILH=200,SEUILB=-100;
 	  int sat[10]={1,1,1,1,1,1,1,1,1,1} ;
 	  unsigned char dist [10] = {10, 20, 35, 50, 86, 127, 180, 197 , 220, 242}; 
 	  int a[5]={10,4,6,7,8};
@@ -109,9 +111,9 @@ int main(void)
 		  
 		 for(i5=0;i5<3;i5++)   // On note i5<3 , car nous avons seulement 3 valeurs 
 	{
-		miroir[i5+3]=miroir[2-i5]; // Sachant que 3 est un constante le tableau sera remplis de 3 à 5 avec le terme gauche de l'égalité
-		                           // Le terme de droit lui indique les valeurs de "miror" de 2 a 0 qu'il doit prendre
-								   // Exemple si i5 = 1 , miroir[4] = miroir[1] , nous avons donc bien présence de l'effet "miroir"
+		miroir[i5+6/2]=miroir[-i5 + 6/2 -1]; // Sachant que 3 est un constante le tableau sera remplis de 3 à 5 avec le terme gauche de l'égalité
+		                                     // Le terme de droit lui indique les valeurs de "miror" de 2 a 0 qu'il doit prendre
+								             // Exemple si i5 = 1 , miroir[4] = miroir[1] , nous avons donc bien présence de l'effet "miroir"
 	}
 		  
 			   
