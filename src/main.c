@@ -10,7 +10,6 @@ int main(void)
       char prenom [100];
 	  char nom [100];
 	  char age [100];
-	  char Bienvenue [9] = " Bienvenue";
 	  int a;
 	  
 	  
@@ -22,8 +21,7 @@ int main(void)
 	  
 	  printf ( "Je m'apelle %s %s et j'ai %s ans", prenom,nom,age);
 	  
-	  
-	  a= MessagePopup (Bienvenue ,phrase);
+	  a= MessagePopup ("Affichage sur fenetre pop-up" ,"Non reussi");
 	  
 	  getchar();
 	  
